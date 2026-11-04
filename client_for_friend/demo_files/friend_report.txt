@@ -1,0 +1,2 @@
+Hello! This is a confidential test file uploaded from Laptop 2 over TLS 1.3 encrypted TCP protocol.
+Integrity verified with MD5 checksum.

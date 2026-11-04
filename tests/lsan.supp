@@ -1,0 +1,9 @@
+# OpenSSL allocates internal state (crypto, SSL contexts, error queues) that persist across thread lifecycles.
+# It is not a bug of this project, so LeakSanitizer is told to ignore it.
+leak:CONF_modules_load_file_ex
+leak:OPENSSL_init_crypto
+leak:OPENSSL_
+leak:CRYPTO_
+leak:ERR_
+leak:libcrypto
+leak:libssl
